@@ -50,7 +50,7 @@ Debug -> Ir paso a paso en el código viendo lo que pasa.
     static void main() {                      // Abreviatura "psvm"
         saludar();                            // Llama a la función "saludar".
         saludar("Pepe");              // Sabe que se refiere a la segunda función de saludar ya que tiene el parámetro de entrada con String. Tiene que coincidir en tipo y número que haya definido.
-        System.out.println(saludar("Pepe", "Rodríguez"));   // El sout tiene que rodear el saludar para que aparezca, ya que de por sí es sólamente un string.
+        System.out.println(saludar("Pepe", "Rodríguez"));   // Método saludar(string, string). Devuelve solo string, por eso lo imprimimos con println. Sino se queda en memoria y no pasa nada.
         leerDatos();
         System.out.println(nombre);           // Ponemos la variable nombre que es la que hemos declarado en leerDatos, la que detecta lo que se ha introducido por teclado.
         saludar(nombre);                      // Se utiliza el primer saludar ya que no tiene parámetros de entrada que coincidan con los otros.
@@ -62,7 +62,7 @@ Debug -> Ir paso a paso en el código viendo lo que pasa.
 
     /*
     Función -> Acción ya definida, Código que se va a repetir. FUERA del main ya que main es otra función.
-    Con void = La función no devuelve nada
+    Con void = La función no devuelve nada, sólo va a ejecutar el código, le ofrece sólo lo que hay dentro.
     */
 
     static void saludar(){
@@ -83,4 +83,11 @@ Debug -> Ir paso a paso en el código viendo lo que pasa.
         System.out.println("Nombre: ");
         nombre = sc.nextLine(); // Lo que declare en una función solo vive en la función, pero dentro de esta función puedo hacer referencia a variables que están declaradas fuera. nextLine -> lo que escribes por consola directamente lo introduce.
     }
+
+
 }
+
+
+// if -> sentencias de control, evalúan si algo es verdadero o falso
+// if verdadero = 1 camino
+// if falso = otro camino
