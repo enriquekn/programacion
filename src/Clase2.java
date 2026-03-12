@@ -11,7 +11,7 @@ En este caso el objetivo no es crear objetos, sino crear un código y ejecutarlo
 
 [] Atributos de una clase: Variables para guardar datos y memoria, nos permiten realizar las funciones que queremos que realice la clase.
 [] Constante: variables que no pueden ser modificadas una vez que han sido asignadas. SIEMPRE EN MAYÚSCULA
-    - final -> Le damos un valor y lo que declaramos a continuación es una constante, ya no podemos cambiarlo.
+    - final -> Le damos un valor y lo que declaramos a continuación es una constante, no pueden cambiar en ejecución y hay que inicializaralas obligatoriamente.
     Para poder hacer referencia por ejemplo a NOTA_APROBADO, tendría que crear un objeto de la clase: "Clase2.NOTA_APROBADO"
     - static -> Me permite utilizar variables, constantes y funciones sin necesidad de crear objetos, pertenecen a la clase, no hace falta crear un objeto.
     Es superior a cualquier objeto creado. Imagina que tenemos.
